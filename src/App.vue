@@ -2,7 +2,7 @@
   <div class="container">
     <div class="box-calculator">
       <div id="display-calculator">
-        <div class="history-calculator">
+        <div class="history-calculator" style="padding-right: 10px">
           <div v-for="item in history" :key="item.operation">
             <p>{{ item.operation }}</p>
             <p>= {{ item.resultOperation }}</p>
@@ -67,6 +67,7 @@ export default {
       currentCalculator: "0",
       history: [],
       lastOperator: "0",
+      checkCaculator: false,
     };
   },
   methods: {
@@ -84,6 +85,10 @@ export default {
         this.currentCalculator = "0";
       } else {
         this.currentCalculator = this.currentCalculator.toString().slice(0, -1);
+
+        this.currentCalculator == "" || this.currentCalculator == "-"
+          ? (this.currentCalculator = "0")
+          : this.currentCalculator;
       }
     },
     getPercent() {
@@ -112,6 +117,7 @@ export default {
           this.currentCalculator += value;
         }
       } else if (value == "*" || value == "+" || value == "-" || value == "/") {
+        this.checkCaculator = false;
         if (this.lastIsOperand(this.currentCalculator)) {
           this.currentCalculator =
             this.currentCalculator.toString().slice(0, -1) + value;
@@ -130,7 +136,12 @@ export default {
         this.currentCalculator = this.currentCalculator.slice(0, -1);
         this.currentCalculator += value;
       } else {
-        this.currentCalculator += value;
+        if (this.checkCaculator) {
+          this.currentCalculator = value;
+          this.checkCaculator = false;
+        } else {
+          this.currentCalculator += value;
+        }
       }
       return (this.currentCalculator = this.currentCalculator
         .toString()
@@ -161,6 +172,7 @@ export default {
         .toString()
         .replaceAll("*", "x")
         .replaceAll("/", "÷");
+      this.checkCaculator = true;
     },
     lastIsOperand(currentCalculate) {
       let operand = currentCalculate.slice(-1);
@@ -225,6 +237,8 @@ export default {
   height: 80%;
   text-align: end;
   overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 10px;
 }
 .history-calculator::-webkit-scrollbar {
   width: 8px;
