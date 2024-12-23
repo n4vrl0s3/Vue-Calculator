@@ -2,7 +2,7 @@
   <div class="container">
     <div class="box-calculator">
       <div id="display-calculator">
-        <div class="history-calculator" style="padding-right: 10px">
+        <div class="history-calculator">
           <div v-for="item in history" :key="item.operation">
             <p>{{ item.operation }}</p>
             <p>= {{ item.resultOperation }}</p>
@@ -199,16 +199,17 @@ export default {
 </script>
 
 <style>
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background: linear-gradient(to bottom right, #000000, #ff0000);
   color: #2c3e50;
-  margin-top: 60px;
 }
 * {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -216,22 +217,26 @@ export default {
 .container {
   position: relative;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box-calculator {
-  margin: auto;
-  border: 1px solid rgb(211, 143, 42);
+  border: 1px solid #333;
   padding: 20px 20px 40px 20px;
   width: 350px;
   height: 620px;
   border-radius: 15px;
-  background-color: rgb(180, 125, 151);
+  background: linear-gradient(145deg, #000, #333);
 }
 #display-calculator {
   height: 35%;
   padding: 10px 20px;
-  background-color: rgb(244, 240, 240);
+  background-color: #000;
   border-radius: 15px;
   margin-bottom: 20px;
+  color: red;
 }
 .history-calculator {
   height: 80%;
@@ -239,24 +244,24 @@ export default {
   overflow-y: auto;
   padding-right: 10px;
   margin-bottom: 10px;
+  color: red;
 }
 .history-calculator::-webkit-scrollbar {
   width: 8px;
   border-radius: 4px;
-  background-color: #fff;
-  margin-left: 10px;
-  border: 0.3px solid black;
+  background-color: #333;
 }
 .history-calculator::-webkit-scrollbar-thumb {
-  background-color: #b48d8d;
+  background-color: #ff0000;
 }
 .result-calculator {
   text-align: end;
   font-size: 30px;
   padding-right: 10px;
+  color: red;
 }
 .buttons-calculator {
-  background-color: rgb(244, 240, 240);
+  background-color: #000;
   padding: 10px 0;
   border-radius: 15px;
 }
@@ -265,11 +270,15 @@ export default {
   height: 60px;
   border-radius: 50%;
   margin: 4px 7px;
-  border: 1px solid rgb(211, 143, 42);
-  background-color: #fff;
+  border: 1px solid #ff0000;
+  background-color: #333;
   font-size: 20px;
   font-weight: 550;
-  color: rgb(123, 120, 120);
+  color: #ff0000;
   cursor: pointer;
+}
+.buttons-calculator button:hover {
+  background-color: #ff0000;
+  color: #000;
 }
 </style>
