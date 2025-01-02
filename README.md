@@ -1,6 +1,9 @@
 <div align=center>
-  
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=100:FF0000,20:F0F0F0&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
+
 ![Demo](https://github.com/user-attachments/assets/d8c298d7-4690-45b0-9fa3-25bdf50b4bca)
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=20:FF0000,100:F0F0F0&section=header&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
 
 </div>
 
@@ -61,8 +64,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <hr><br>
 
-<div align="center">
+<div align=center>
   <a href="https://www.instagram.com/guanshiyin_/">
-     <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=20:72aae3,100:cadbf5&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
+     <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=100:FF0000,20:F0F0F0&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
   </a>
 </div>
