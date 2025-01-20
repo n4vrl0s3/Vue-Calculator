@@ -42,19 +42,19 @@ This repository contains the source code for a basic calculator application buil
 1. Install Node.js
 2. Clone this repository
 
-```
+```bash
 git clone https://github.com/guanshiyin28/Vue-Calculator.git
 ```
 
 3. Direct to directory
 
-```
+```bash
 cd Vue-Calculator
 ```
 
 4. Install npm
 
-```
+```bash
 npm install
 ```
 
@@ -64,19 +64,19 @@ npm install
 
 1. Compiles and hot-reloads for development
 
-```
+```bash
 npm run serve
 ```
 
 2. Compiles and minifies for production
 
-```
+```bash
 npm run build
 ```
 
 3. Lints and fixes files
 
-```
+```bash
 npm run lint
 ```
 
