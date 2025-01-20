@@ -19,6 +19,24 @@ This repository contains the source code for a basic calculator application buil
 
 <hr><br>
 
+## Features
+
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Responsive design
+- Clear and user-friendly interface
+- Real-time calculation updates
+
+<hr><br>
+
+## Technologies Used
+
+- Vue.js
+- HTML5
+- CSS3
+- JavaScript
+
+<hr><br>
+
 ## Project Setup
 
 1. Install Node.js
@@ -34,24 +52,29 @@ git clone https://github.com/guanshiyin28/Vue-Calculator.git
 cd Vue-Calculator
 ```
 
-4. install npm
+4. Install npm
 
 ```
 npm install
 ```
 
-5. Compiles and hot-reloads for development
+<hr><br>
+
+## Steps to Run
+
+1. Compiles and hot-reloads for development
 
 ```
 npm run serve
 ```
 
-6. Compiles and minifies for production
+2. Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-7. Lints and fixes files
+3. Lints and fixes files
 
 ```
 npm run lint
@@ -60,7 +83,14 @@ npm run lint
 <hr><br>
 
 ## Customize Configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+<hr><br>
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 <hr><br>
 
