@@ -19,6 +19,37 @@ This repository contains the source code for a basic calculator application buil
 
 <hr><br>
 
+## Demo
+
+Check out the live demo of the Vue Calculator [here](https://your-demo-link.com).
+
+### Program Function Demonstration
+
+Here is a demonstration of the basic arithmetic operations provided by the calculator:
+
+```javascript
+// filepath: /home/guan/Documents/Code/Vue-Calculator/src/components/Calculator.vue
+methods: {
+  add(a, b) {
+    return a + b;
+  },
+  subtract(a, b) {
+    return a - b;
+  },
+  multiply(a, b) {
+    return a * b;
+  },
+  divide(a, b) {
+    if (b === 0) {
+      return 'Error: Division by zero';
+    }
+    return a / b;
+  }
+}
+```
+
+<hr><br>
+
 ## Features
 
 - Basic arithmetic operations (addition, subtraction, multiplication, division)
@@ -39,20 +70,20 @@ This repository contains the source code for a basic calculator application buil
 
 ## Project Setup
 
-1. Install Node.js
-2. Clone this repository
+1. **Install Node.js**
+2. **Clone this repository**
 
 ```bash
 git clone https://github.com/guanshiyin28/Vue-Calculator.git
 ```
 
-3. Direct to directory
+3. **Direct to directory**
 
 ```bash
 cd Vue-Calculator
 ```
 
-4. Install npm
+4. **Install npm**
 
 ```bash
 npm install
@@ -62,19 +93,19 @@ npm install
 
 ## Steps to Run
 
-1. Compiles and hot-reloads for development
+1. **Compiles and hot-reloads for development**
 
 ```bash
 npm run serve
 ```
 
-2. Compiles and minifies for production
+2. **Compiles and minifies for production**
 
 ```bash
 npm run build
 ```
 
-3. Lints and fixes files
+3. **Lints and fixes files**
 
 ```bash
 npm run lint
