@@ -111,7 +111,7 @@ This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE
 <hr><br>
 
 <div align="center">
-   <a href="https://www.instagram.com/guanshiyin_/">
-      <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=100:393E46,20:F7F7F7&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
-   </a>
+  <a href="https://www.x.com/n4vrl0s3/">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=100:49108B,20:F3F8FF&section=footer&reversal=false&textBg=false&fontAlignY=50&descAlign=48&descAlignY=59"/>
+  </a>
 </div>
