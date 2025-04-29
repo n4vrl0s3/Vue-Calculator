@@ -65,7 +65,7 @@ methods: {
 2. **Clone this repository**
 
 ```bash
-git clone https://github.com/guanshiyin28/Vue-Calculator.git
+git clone https://github.com/n4vrl0s3/Vue-Calculator.git
 ```
 
 3. **Direct to directory**
